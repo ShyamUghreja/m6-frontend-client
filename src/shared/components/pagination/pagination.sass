@@ -1,0 +1,89 @@
+.pagination-container 
+  display: flex
+  list-style-type: none
+  justify-content: center
+  padding-left: 0
+  margin-top: 40px
+  margin-bottom: 0
+  .pagination-item
+    width: 32px
+    height: 32px
+    text-align: center
+    margin: auto 10px
+    display: flex
+    box-sizing: border-box
+    align-items: center
+    letter-spacing: 0.01071em
+    border-radius: 16px
+    font-weight: 600
+    font-size: 20px
+    line-height: 115%
+    line-height: 1.43
+    min-width: 32px
+    justify-content: center
+    &.disabled
+      &:first-child
+        border: 1px solid #D0D5DD
+        i 
+          color: #D0D5DD
+      &:last-child
+        border: 1px solid #D0D5DD
+        i 
+          color: #D0D5DD
+    i 
+      line-height: 1
+    &:first-child
+      border: 1px solid #516AF5
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)
+      border-radius: 8px
+      i 
+        color: #516AF5
+        font-weight: 400
+        font-size: 15px
+    &:last-child
+      border: 1px solid #516AF5
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)
+      border-radius: 8px
+      i 
+        color: #516AF5
+        font-weight: 400
+        font-size: 15px
+    &.dots:hover 
+      background-color: transparent
+      cursor: default
+    &:hover 
+      background-color: rgba(0, 0, 0, 0.04)
+      cursor: pointer
+    &.selected 
+      background-color: #516AF5
+      color: #ffffff
+    .arrow 
+      &::before 
+        position: relative
+        content: ''
+        display: inline-block
+        width: 0.4em
+        height: 0.4em
+        border-right: 0.12em solid rgba(0, 0, 0, 0.87)
+        border-top: 0.12em solid rgba(0, 0, 0, 0.87)
+      &.left 
+        transform: rotate(-135deg) translate(-50%)
+      &.right 
+        transform: rotate(45deg)
+    &.disabled 
+      pointer-events: none
+      .arrow::before 
+        border-right: 0.12em solid rgba(0, 0, 0, 0.43)
+        border-top: 0.12em solid rgba(0, 0, 0, 0.43)
+      &:hover 
+        background-color: transparent
+        cursor: default
+
+@media screen and (max-width: 767px)
+  .pagination-container 
+    .pagination-item
+      font-size: 16px
+      width: 25px
+      min-width: 25px
+      height: 25px
+      margin: 0 5px

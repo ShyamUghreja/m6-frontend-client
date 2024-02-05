@@ -1,0 +1,45 @@
+.subscribe-card
+    padding: 10px
+    border: 1px solid transparent
+    border-radius: 20px
+    transition: all 0.3s ease-in-out
+    width: 77%
+    margin: auto
+    &:hover
+        border: 1px solid #FF6737
+    p
+        font-size: 20px !important
+        padding: 0 30px !important
+        line-height: 110% !important
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+    img
+        height: 88px
+        width: 88px
+        object-fit: cover
+        border-radius: 50%
+        margin-bottom: 28px
+@media screen and (max-width: 1400px)
+    .subscribe-card
+        padding: 8px
+        img
+            height: 65px
+            width: 65px
+            margin-bottom: 20px
+
+@media screen and (max-width: 1200px)
+    .subscribe-card
+        width: 85%
+
+@media screen and (max-width: 992px)
+    .subscribe-card
+        margin-bottom: 20px
+
+@media screen and (max-width: 767px)
+    .subscribe-card
+        margin-bottom: 20px
+        p
+            padding: 0 !important

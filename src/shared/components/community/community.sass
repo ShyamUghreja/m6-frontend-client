@@ -1,0 +1,72 @@
+.community-section
+    .crypto-card
+        display: flex
+        padding: 15px
+        margin-bottom: 20px
+        color: #000
+        text-decoration: none
+        &:last-child
+            margin-bottom: 0
+        .card-image
+            margin-right: 15px
+            img
+                height: 110px
+                width: 110px
+                max-width: 110px
+                max-height: 110px
+                min-height: 110px
+                object-fit: cover
+
+        .card-content
+            .by-date
+                margin-top: 12px
+            .content-heading
+                margin: 0 0 5px 0 !important
+                button
+                    margin-left: 3px
+            .heading-5
+                margin-top: 7px !important
+                overflow-wrap: anywhere
+    .creator-cards
+        .ecosystem-card
+        .card-content
+            .heading-6
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+
+@media screen and (max-width: 1400px)
+    .community-section
+        .crypto-card
+            margin-bottom: 12px
+            .card-content
+                .card-image
+                    margin-right: 10px
+                .content-heading
+                    button
+                        margin-left: 3px
+                    p
+                        font-size: 14px
+
+@media screen and (max-width: 1200px)
+    .community-section
+        .crypto-card
+            .card-content
+                .by-date
+                    margin-top: 5px
+                .heading-5
+                    -webkit-line-clamp: 1
+
+@media screen and (max-width: 767px)
+    .community-section
+        .crypto-card
+            .card-image
+                img
+                    height: 80px
+                    width: 80px
+                    max-width: 80px
+                    max-height: 80px
+                    min-height: 80px
+                    object-fit: cover

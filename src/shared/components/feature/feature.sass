@@ -1,0 +1,185 @@
+.hero-section-content
+    padding: 20px
+    background: linear-gradient(180deg, #FF6737 0%, rgba(255, 103, 55, 0) 48.78%), rgba(244, 244, 244, 0.6)
+    transition: all 0.3s ease-in-out
+    &:hover
+        .hero-section-img
+            img
+                transform: rotate(0deg) scale(1)
+                transition: all 0.3s ease-in-out
+    .hero-section-img
+        overflow: hidden
+        img
+            max-height: 250px
+            object-fit: cover
+            width: 100%
+            height: 157px
+            transition: all 0.3s ease-in-out
+            transform: rotate(5deg) scale(1.2)
+
+    .text-part
+        p
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+            height: 25px
+        .heading-3
+            margin: 12px 0 !important
+            height: 70px
+            display: -webkit-box
+            -webkit-line-clamp: 2
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+        .hero-heading
+            display: flex
+            align-items: center
+            justify-content: end
+            margin: 15px 0
+            .sub-heading
+                font-weight: 500
+                font-size: 20px
+                line-height: 120%
+                overflow: hidden
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
+        .by-date
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 15px 0 20px 0
+            p
+                font-weight: 400 !important
+                font-size: 20px !important
+                line-height: 27px !important
+                span
+                    font-weight: 600 !important
+        button
+            margin-left: 16px
+        .daily-newsletters
+            padding: 20px
+            background-color: #000000
+            cursor: default
+            .news-heading
+                font-weight: 700
+                font-size: 20px
+                line-height: 112%
+            .form-control
+                padding: 15px 22px
+                font-weight: 500
+                font-size: 16px
+                line-height: 112%
+                background: #FFFFFF
+                border: 1px solid rgba(13, 13, 19, 0.1)
+                border-radius: 57px
+            .news-sign-button
+                position: absolute
+                right: 8px
+                top: 50%
+                transform: translateY(-50%)
+                background: #FF6737
+                border-radius: 48px
+                font-weight: 600
+                font-size: 16px
+                line-height: 100%
+                border: none
+                padding: 12px 25px
+@media screen and (max-width: 1600px)
+    .hero-section-content
+        .text-part
+            .by-date
+                margin-top: 10px
+
+@media screen and (max-width: 1400px)
+    .hero-section-content
+        .hero-section-img
+            img
+        .text-part
+            .by-date
+                margin: 10px 0
+                p
+                    font-size: 18px !important
+            .daily-newsletters
+                .form-control
+                    padding: 10px 20px
+                .news-sign-button
+                    padding: 8px 20px
+
+@media screen and (max-width: 1200px)
+    .hero-section-content
+        padding: 15px
+        .hero-section-img
+            img
+                max-height: 200px
+        .text-part
+            .heading-3
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+            button
+                margin-left: 12px
+            .description
+                font-size: 18px
+            .hero-heading
+                .sub-heading
+                    font-size: 16px !important
+                    line-height: 20px !important
+            .by-date
+                p
+                    font-size: 16px !important
+                    line-height: 20px !important
+            .daily-newsletters
+                padding: 15px
+                .news-heading
+                    font-size: 16px
+@media screen and (max-width: 992px)
+    .hero-section-content
+        padding: 20px
+        margin-bottom: 20px
+        .hero-section-img
+            img
+                max-height: 250px
+        .text-part
+            .heading-3
+                margin: 15px 0 12px 0 !important
+            .description
+                font-size: 16px
+            .by-date
+                margin-top: 15px
+                p
+                    font-size: 16px !important
+                    line-height: 20px !important
+            .hero-heading
+                .sub-heading
+                    font-size: 18px
+@media screen and (max-width: 767px)
+    .hero-section-content
+        padding: 15px
+        margin-bottom: 5px
+        .hero-section-img
+            img
+                height: 200px
+        .text-part
+            .hero-heading
+                margin: 10px 0 10px 0
+            .heading-3
+                height: auto
+                margin: 10px 0 10px 0 !important
+            .description
+                font-size: 16px
+            .by-date
+                margin-top: 15px
+                p
+                    font-size: 14px !important
+                    line-height: 20px !important
+            .daily-newsletters
+                padding: 15px
+            .hero-heading
+                .sub-heading
+                    font-size: 14px

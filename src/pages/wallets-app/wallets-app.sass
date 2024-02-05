@@ -1,0 +1,61 @@
+.wallet-apps-card
+  text-align: center
+  background: #F4F4F4
+  border-radius: 16px
+  padding: 20px 10px
+  margin: 0 10px 20px 10px
+  width: 15%
+  color: #000
+  text-decoration: none
+  &.card-image
+    .card-image
+      img
+        object-fit: contain
+
+  .card-image
+    margin-bottom: 20px
+    img
+      height: 90px
+      width: 90px
+      border-radius: 50%
+      object-fit: cover
+.apps-card
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+.page-info-section
+    &.wallets-app-page
+        background-image: url(/assets/images/wallets-app-img.svg) !important
+@media screen and (max-width: 1200px)
+  .wallet-apps-card
+    width: 17%
+    padding: 25px 10px
+    .card-image
+      margin-bottom: 20px
+      img
+        height: 80px
+        width: 80px
+    .card-content
+      .heading-5
+        display: -webkit-box
+        -webkit-line-clamp: 1
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+
+@media screen and (max-width: 992px)
+  .wallet-apps-card
+    width: 28%
+    margin-bottom: 20px
+
+@media screen and (max-width: 767px)
+  .wallet-apps-card
+    padding: 15px 10px
+    border-radius: 10px
+    margin: 0 5px
+    margin-bottom: 20px
+    .card-image
+      img
+        height: 50px
+        width: 50px
+        margin-bottom: 10px

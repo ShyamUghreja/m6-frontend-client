@@ -1,0 +1,107 @@
+.page-info-section
+  margin-bottom: 40px
+  position: relative
+  background-image: url(/assets/images/wallets-img.svg) 
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  height: 189px
+  display: flex
+  align-items: flex-end
+  padding: 36px 
+  .page-info-heading
+    display: flex
+    align-items: center
+  img
+    height: 400px
+    object-fit: cover
+    width: 100%
+    margin-bottom: 20px
+  .heading-5
+    color: #FF6737 !important
+    margin-top: 15px !important
+    margin-left: 16px !important
+  .heading-2
+    color: #fff !important
+.data-table
+  font-size: 20px
+  margin-bottom: 0 !important
+  tr
+    th
+      padding: 15px 30px !important
+      background: rgb(247 247 247)
+      &:last-child
+        border-right: none !important
+        td
+          padding: 15px 30px !important
+          &:last-child
+            border-right: none !important
+    td
+      padding: 15px 30px !important
+      p
+        display: -webkit-box
+        overflow: hidden
+        text-overflow: ellipsis
+        -webkit-line-clamp: 1
+        -webkit-box-orient: vertical
+        font-weight: 400
+        font-size: 20px
+        line-height: 120%
+
+.table>:not(caption)>*>*
+  border-bottom: none !important
+.responsive-table
+  overflow-y: hidden
+  overflow-x: hidden
+.responsive-table
+  scrollbar-width: auto
+  scrollbar-color: #FF6737 #FFE3DA
+.responsive-table-mui
+  overflow-y: hidden
+  // overflow-y: scroll
+  .respondive-mui
+    min-width: 500px
+@media screen and (max-width: 1200px)
+  .page-info-section
+    img
+      height: 300px
+
+@media screen and (max-width: 992px)
+  .page-info-section
+    img
+      height: 260px
+@media screen and (max-width: 767px)
+  .page-info-section
+    margin-bottom: 20px
+    img
+      height: 150px !important
+      margin-bottom: 10px
+    .heading-2
+      font-size: 35px !important
+      line-height: 40px !important
+    .heading-5
+      font-size: 20px !important
+      line-height: 26px !important
+      margin-left: 0 !important
+    .page-info-heading
+      display: block
+
+  .responsive-table
+    overflow-y: hidden
+    overflow-x: scroll
+  .data-table
+    min-width: 400px
+    tr
+      th
+        font-size: 14px
+        padding: 5px !important
+      td
+        font-size: 14px
+        padding: 5px !important
+        p
+          font-size: 14px
+  // .responsive-table::-webkit-scrollbar
+  //   width: 10px
+  // .responsive-table::-webkit-scrollbar-track
+  //   background: #FFE3DA
+  //   border: 8px solid white

@@ -1,0 +1,46 @@
+.say-on-twitter-card
+    padding: 30px
+    background: #ffffff
+    display: block
+    position: relative
+    border-radius: 4px
+    z-index: 0
+    overflow: hidden
+    height: 100%
+    color: #000
+    text-decoration: none
+    &:before
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 1px
+        right: 1px
+        background: #ff67374f
+        height: 0px
+        width: 0px
+        transform: scale(1)
+        transform-origin: 50% 50%
+        border-radius: 50%
+        transition: all 0.5s ease-out
+    &:hover
+        color: #000
+        &:before
+            width: 100%
+            height: 100%
+            transform: scale(21)
+@media screen and (max-width: 992px)
+    .say-on-twitter-card
+        margin-bottom: 20px
+        height: auto
+
+@media screen and (max-width: 767px)
+    .say-on-twitter-card
+        margin-bottom: 20px
+        padding: 20px
+        height: auto
+    .subscribe-section
+        .row
+            .col-lg-4
+                &:last-child
+                    .say-on-twitter-card
+                        margin-bottom: 0px

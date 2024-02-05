@@ -1,0 +1,105 @@
+.creator-cards
+    &.top-creators
+        padding-bottom: 80px
+        padding: 20px
+        background: #F4F4F4
+        position: relative
+    .creator-all-btn
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(-50%)
+        width: max-content
+        z-index: 2
+        height: 50px
+        width: 100%
+        background: linear-gradient(1deg, rgb(244 244 244) 36.11%, rgba(244, 244, 244, 0.1098039216) 130.53%)
+        display: flex
+        align-items: center
+        justify-content: center
+        button
+            font-weight: 600
+            font-size: 16px
+            padding: 5px 20px
+            background: #516AF5
+            border-radius: 48px
+            .btn-div
+                margin-bottom: 2px
+            &:hover
+                background: transparent
+                color: #516AF5
+                border: 1px solid #516AF5
+    .row
+        .col-lg-6
+            &:nth-last-child(-n+2)
+                .ecosystem-card
+                    margin-bottom: 0 !important
+.ecosystem-card
+    background: #ffffff
+    margin-bottom: 16px
+    position: relative
+    padding: 23px 15px
+    &:before
+        content: ""
+        width: 100%
+        height: 100%
+        border: 0.35px transparent
+        position: absolute
+        left: 0
+        top: 0
+    &:hover
+        &:before
+            border: 0.35rem solid
+            border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30
+            animation: borderRotate var(--d) linear infinite forwards
+    .card-image
+        img
+            border-radius: 50%
+            height: 70px
+            width: 70px
+            object-fit: cover
+    .card-content
+        .heading-5
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+
+@media screen and (max-width: 1400px)
+    .creator-cards
+        .creator-all-btn
+            button
+                font-size: 16px
+                padding: 6px 20px
+    .ecosystem-card
+        padding: 25px 20px
+        .card-image
+            img
+                height: 65px
+                width: 65px
+
+@media screen and (max-width: 1200px)
+    .ecosystem-card
+        padding: 15px 10px
+        .card-image
+            img
+                height: 60px
+                width: 60px
+
+@media screen and (max-width: 992px)
+    .ecosystem-card
+        padding: 15px 10px
+        .card-image
+            img
+                height: 60px
+                width: 60px
+                margin-bottom: 10px
+
+@media screen and (max-width: 767px)
+    .ecosystem-card
+        // background: #F4F4F4
+        border-radius: 12px
+    .creator-cards
+        padding: 0px
+        background: transparent

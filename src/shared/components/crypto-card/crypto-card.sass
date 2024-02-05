@@ -1,0 +1,264 @@
+.treding-month
+    // background-color: #FFC2AE
+    .color-trending
+        background: #F3F5FB
+        padding: 50px
+        .crypto-card
+            background: #ffff
+    .curated-buttons
+        flex-wrap: nowrap
+        a
+            font-weight: 600
+            font-size: 24px
+            line-height: 112%
+            margin-left: 15px
+            border-radius: 48px
+            background-color: transparent
+            border: 1px solid rgba(0, 0, 0, 0.2)
+            padding: 8px 10px
+            padding-right: 20px
+            color: black
+            display: flex
+            align-items: center
+            width: max-content
+            height: 40px
+            .button-name
+                margin-bottom: 3px
+            img
+                width: 30px
+                height: 30px
+                padding: 5px
+                background: #ffff
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 50%
+                margin-right: 10px
+
+            &.active
+                background-color: #FF6737
+                border: 1px solid #FF6737
+.crypto-card
+    background: #F4F4F4
+    position: relative
+    padding: 20px
+    margin-bottom: 24px
+    height: auto
+    overflow: hidden
+    &.trending-crypto
+        .card-content
+            .by-date
+                margin-top: 15px
+            p.normal
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+
+    &:before
+        content: ""
+        width: 100%
+        height: 100%
+        border: 0.35px transparent
+        position: absolute
+        left: 0
+        top: 0
+    &:hover
+        &:before
+            border: 0.35rem solid
+            border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30
+            animation: borderRotate var(--d) linear infinite forwards
+    .card-image
+        img
+            height: 157px
+            width: 100%
+            object-fit: cover
+    .card-content
+        .content-heading
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 12px 0
+            button
+                margin-left: 8px
+        p.small
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+        p.normal
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            height: 20px
+            text-overflow: ellipsis
+        .heading-6
+            margin-top: 12px !important
+            // height: 50px
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+        .heading-5
+            margin-top: 12px !important
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+        .by-date
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 13px
+
+.community-section
+    .crypto-card
+        display: flex
+        padding: 15px
+        margin-bottom: 20px
+        color: #000
+        text-decoration: none
+        &.community-card
+            .card-content
+                .heading-5
+                    display: -webkit-box
+                    -webkit-line-clamp: 2
+                    -webkit-box-orient: vertical
+                    overflow: hidden
+                    text-overflow: ellipsis
+        &:last-child
+            margin-bottom: 0
+        .card-image
+            margin-right: 15px
+        .card-content
+            .by-date
+                margin-top: 12px
+            .content-heading
+                margin: 0 0 5px 0 !important
+                button
+                    margin-left: 3px
+            .heading-5
+                margin-top: 7px !important
+                overflow-wrap: anywhere
+@property --angle
+    syntax: '<angle>'
+    initial-value: 90deg
+    inherits: true
+
+@property --gradX
+    syntax: '<percentage>'
+    initial-value: 50%
+    inherits: true
+
+@property --gradY
+    syntax: '<percentage>'
+    initial-value: 0%
+    inherits: true
+
+:root
+    --d: 2500ms
+    --angle: 90deg
+    --gradX: 100%
+    --gradY: 50%
+    --c1: #FF6737
+    --c2: rgba(168, 239, 255, 0.1)
+
+@keyframes borderRotate
+    100%
+        --angle: 420deg
+
+@keyframes borderRadial
+    20%
+        --gradX: 100%
+        --gradY: 50%
+
+    40%
+        --gradX: 100%
+        --gradY: 100%
+
+    60%
+        --gradX: 50%
+        --gradY: 100%
+
+    80%
+        --gradX: 0%
+        --gradY: 50%
+
+    100%
+        --gradX: 50%
+        --gradY: 0%
+@media screen and (max-width: 1400px)
+    .crypto-card
+        padding: 15px
+        margin-bottom: 20px
+        .card-image
+            img
+                height: 145px
+        .card-content
+            .heading-6
+                margin-top: 10px !important
+            .by-date
+                margin-top: 20px
+    .treding-month
+        .curated-buttons
+            a
+                font-size: 18px
+                padding: 6px 10px
+@media screen and (max-width: 1200px)
+    .crypto-card
+        padding: 15px
+        .card-image
+            img
+                height: 125px
+        .card-content
+            .heading-6
+                margin: 5px 0 10px 0 !important
+            .by-date
+                margin-top: 10px
+            p.normal
+                font-size: 12px
+            .content-heading
+                margin: 8px 0 5px 0
+    .treding-month
+        .color-trending
+            padding: 30px
+@media screen and (max-width: 992px)
+    .treding-month
+        .curated-buttons
+            overflow: scroll
+            a
+                margin-bottom: 10px
+    .treding-month
+        .curated-buttons
+            a
+                font-size: 16px
+                margin-left: 10px
+@media screen and (max-width: 767px)
+    .crypto-card
+        .card-image
+            img
+                max-height: 140px
+        .card-content
+            .heading-5
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+            .heading-6
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+                text-overflow: ellipsis
+
+            .heading-6
+                margin: 6px 0 8px 0 !important
+    .treding-month
+        .color-trending
+            padding: 15px

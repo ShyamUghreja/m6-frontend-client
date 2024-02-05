@@ -1,0 +1,115 @@
+.podcasts-details-page
+    max-width: 750px
+    margin: auto
+    .player-section
+        .top-img
+            img
+                height: 250px
+                width: 100%
+                object-fit: cover
+        .player-name
+            display: flex
+            justify-content: space-between
+            .medium
+                font-weight: 500
+        .rhap_total-time
+            position: relative
+            top: auto
+            left: auto
+            background: transparent
+            padding: 0
+            font-size: 16px
+            border-radius: 0
+            color: #000000
+        .audio-player
+            padding: 10px !important
+            background: #FFF5F1 !important
+            height: 110px
+            .rhap_container
+                position: relative
+                height: 100%
+                padding: 0 0 20px 0 !important
+                .rhap_progress-section
+                    flex-direction: row
+                    position: absolute
+                    width: 100%
+                    bottom: 0
+                    left: 0
+                .rhap_horizontal-reverse
+                    width: 100%
+                .rhap_controls-section
+                    width: 100%
+                .rhap_main-controls
+                    flex: auto
+                    width: 100%
+                    justify-content: space-between
+                .rhap_forward-button
+                    border: none !important
+                    background: transparent !important
+                    position: relative
+                    width: 50px !important
+                    &:after
+                        content: "\EA5A 10s"
+                        font-family: remixicon!important
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        font-size: 18px
+                        line-height: normal
+                        color: #C6BFBF
+                        width: 100%
+                    svg
+                        display: none
+                .rhap_rewind-button
+                    border: none !important
+                    background: transparent !important
+                    position: relative
+                    width: 50px !important
+                    &:after
+                        content: "\EA58 10s"
+                        font-family: remixicon!important
+                        position: absolute
+                        left: 50%
+                        top: 50%
+                        transform: translate(-50%, -50%)
+                        font-size: 18px
+                        line-height: normal
+                        color: #C6BFBF
+                        width: 100%
+                    svg
+                        display: none
+
+@media screen and (max-width: 992px)
+    .podcasts-details-page
+        padding: 30px 0
+        .player-section
+            .top-img
+                img
+                    height: 250px
+
+@media screen and (max-width: 767px)
+    .podcasts-details-page
+        padding: 0
+        .player-section
+            .top-img
+                img
+                    height: 200px
+        .player-section
+            .audio-player
+                padding: 10px !important
+                .rhap_container
+                    .rhap_forward-button
+                        &:after
+                            font-size: 14px
+                    .rhap_rewind-button
+                        &:after
+                            font-size: 14px
+@media screen and (max-width: 375px)
+    .podcasts-details-page
+        .player-section
+            .top-img
+                img
+                    height: 150px
+        .player-section
+            .audio-player

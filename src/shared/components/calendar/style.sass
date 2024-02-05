@@ -1,0 +1,66 @@
+.calendarComp
+  // background: linear-gradient( 176.38deg,    #020306 1.58%,    rgba(2, 3, 6, 0.13) 26.99%,    rgba(2, 3, 6, 0.57) 88.86%  ),  url("./assert/images/Calendar_Background.png")
+  background-size: cover
+  width : 100%
+
+.calander
+  width: 100%
+.year
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.month
+  margin: 5px 5px 15px 5px
+  border: 1px solid #FF6737
+  padding: 22px
+
+.month-name
+  color: #FF6737
+  font-weight: bold
+  border-bottom: 1px solid #FF6737
+
+.day
+  display: inline-block
+  width: 30px
+  height: 30px
+  text-align: center
+  line-height: 30px
+  color: #FF6737
+  margin: 5px
+
+.date
+  width: 30px
+  height: 30px
+  background: transparent
+  color: #000
+  border: none
+  outline: none
+  margin: 5px
+
+  &.in-month:hover
+    cursor: pointer
+    color: #FF6737
+
+.today
+  color: #FF6737
+
+.date
+  &.prev-month, &.next-month
+    color: grey
+
+@media ( max-width: 1024px )
+    .month
+        padding: 17px
+@media ( max-width: 768px )
+    .month
+        padding: 34px
+@media ( max-width: 425px )
+    .month
+        padding: 43px
+@media ( max-width: 375px )
+    .month
+        padding: 18px
+@media ( max-width: 320px )
+    .month
+        padding: 10px

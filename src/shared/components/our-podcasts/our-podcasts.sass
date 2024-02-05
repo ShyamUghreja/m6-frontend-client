@@ -1,0 +1,87 @@
+.podcasts-section
+    background: #0D0D13
+.podcast-card
+    padding: 16px
+    background: #31313E
+    margin-bottom: 24px
+    .card-image
+        margin-right: 20px
+        img
+            height: 100%
+            width: 100%
+            max-width: 128px
+            min-width: 128px
+            object-fit: cover
+    .card-content
+        .heading-4
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            text-overflow: ellipsis
+    .card-title
+        font-weight: 700 !important
+        font-size: 24px !important
+        line-height: 115.1% !important
+    .desctiption
+        color: rgba(255, 255, 255, 0.7)
+        display: -webkit-box
+        -webkit-line-clamp: 4
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+        height: 100px
+    .play-icon
+        background: #FF6737
+        cursor: pointer
+        border-radius: 48px
+        color: #ffffff
+        padding: 3px 15px 5px 15px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: fit-content
+        font-weight: 600
+        font-size: 13px
+        line-height: 140%
+        i
+            font-size: 16px
+            line-height: 1
+            margin-right: 10px
+
+@media screen and (max-width: 1600px)
+
+@media screen and (max-width: 1400px)
+    .podcast-card
+        .card-description
+            font-size: 22px !important
+
+@media screen and (max-width: 1200px)
+    .podcast-card
+        .play-icon
+            font-size: 12px
+            line-height: 133%
+            i
+                font-size: 12px
+        .card-image
+            margin-right: 15px
+
+@media screen and (max-width: 992px)
+    .podcast-card
+        .card-image
+            img
+                min-width: 100px
+
+@media screen and (max-width: 767px)
+    .podcast-card
+        padding: 15px
+        .card-image
+            margin-right: 10px
+            img
+                min-width: auto
+                max-width: 80px
+        .card-content
+            width: 60%
+        .desctiption
+            height: auto
+            -webkit-line-clamp: 2

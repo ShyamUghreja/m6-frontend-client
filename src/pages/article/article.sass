@@ -1,0 +1,120 @@
+.article-page
+    max-width: 750px
+    margin: auto
+    overflow: hidden
+    .article-section
+        .user-footer
+            justify-content: space-between
+            align-items: center
+            .user
+                display: flex
+                align-items: center
+                img
+                    height: 48px
+                    width: 48px
+                    border-radius: 50%
+                    object-fit: cover
+                    margin-right: 10px
+                p
+                    font-size: 20px
+                    font-weight: 400
+            .user-btn
+                .shareand-save
+                    background: #F9F9F9
+                    border: 1px solid rgba(0, 0, 0, 0.1) !important
+                    height: 30px
+                    width: 30px
+                    max-width: 30px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    padding: 0 !important
+                    i
+                        // color: #000000
+                        margin-right: 0
+                        font-size: 15px
+                button
+                    display: flex
+                    align-items: center
+                    margin-right: 10px
+    .article-img-content
+        .article-img
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                max-height: 300px
+    .comment-box
+        .comment-profile
+            background: #D9D9D9
+            height: 72px
+            width: 72px
+            border-radius: 50%
+            margin-right: 15px
+            min-width: 72px
+            max-width: 72px
+        .comment-content
+            >p
+                &:nth-child(1)
+                    width: 75%
+            .comment-person
+
+            a
+                text-decoration: none
+                color: #0D0D13
+    .leave-box
+        background: #F4F4F499
+        input
+            width: 100%
+            height: 180px
+            border: 1px solid #3333331A
+
+@media screen and (max-width: 1400px)
+    .article-page
+        padding: 80px 0
+
+@media screen and (max-width: 1200px)
+    .article-page
+        padding: 60px 0
+        .article-section
+    .article-img-content
+        p
+            line-height: 1.5
+
+@media screen and (max-width: 992px)
+    .article-page
+        padding: 40px 0
+        .article-section
+            .user-footer
+                .user
+                    margin-bottom: 0
+    .article-img-content
+        .article-img
+            margin: 20px 0
+        .row
+            flex-direction: column-reverse
+
+@media screen and (max-width: 767px)
+    .article-page
+        padding: 30px 0
+        .article-section
+            .user-footer
+                .user
+                    img
+                        height: 30px
+                        width: 30px
+                        margin-right: 5px
+                    p
+                        font-size: 16px
+    .article-img-content
+        .article-img
+            margin: 20px 0
+            img
+                max-height: 200px
+@media screen and (max-width: 330px)
+    .article-page
+        .article-section
+            .user-footer
+                .user-btn
+                    button
+                        margin-right: 5px

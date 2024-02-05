@@ -1,0 +1,65 @@
+.all-creator-section
+    background: #F3F5FB
+    .all-creator-part
+        display: flex
+        grid-template-columns: auto auto auto auto auto
+        justify-content: center
+        flex-wrap: wrap
+        .ecosystem-card
+            width: 16%
+            margin: 0 10px 20px 10px
+            .card-image
+                img
+                    height: 120px
+                    width: 120px
+                    margin: auto
+
+.all-tags-buttons
+    button
+        a
+            margin-bottom: 4px
+        &.active
+            background: #FF6737
+            border: 1px solid #FF6737
+            a
+                color: #ffff !important
+
+@media screen and (max-width: 1600px)
+    .all-creator-section
+        .all-creator-part
+            .ecosystem-card
+                .card-image
+                    img
+                        height: 100px
+                        width: 100px
+@media screen and (max-width: 1400px)
+    .all-creator-section
+        .all-creator-part
+            .ecosystem-card
+                .card-image
+                    img
+                        height: 90px
+                        width: 90px
+@media screen and (max-width: 1200px)
+    .all-creator-section
+        .all-creator-part
+            .ecosystem-card
+                width: 180px
+                .card-image
+                    img
+                        height: 70px
+                        width: 70px
+    .all-tags-buttons
+        justify-content: start !important
+@media screen and (max-width: 767px)
+    .all-creator-section
+        .all-creator-part
+            grid-template-columns: auto auto auto
+            .ecosystem-card
+                border-radius: 0
+                width: 140px
+                .card-image
+                    img
+                        height: 50px
+                        width: 50px
+                        margin-bottom: 10px

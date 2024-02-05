@@ -1,0 +1,84 @@
+.mail-all-card
+    margin-top: 40px
+    .mail-card
+        display: flex
+        align-items: center
+        padding: 16px 58px 20px 40px
+        background: #FAFAFA
+        border: 1px solid rgba(13, 13, 19, 0.1)
+        margin-bottom: 20px
+        .number-text
+            font-weight: 700
+            font-size: 64px
+            line-height: 48px
+            text-align: center
+            letter-spacing: -0.02em
+            color: #516AF5
+            margin-right: 35px
+.mail-social-part
+    background: #516AF5
+    padding: 15px
+    ul
+        display: flex
+        gap: 50px
+        justify-content: center
+        align-items: center
+        li
+            a
+                color: #fff
+                text-decoration: none
+                font-size: 20px
+.mail-footer-part
+    display: grid
+    grid-template-columns: auto auto auto
+    gap: 50px
+    img
+        height: 30px
+
+.top-image-logo
+    img
+        height: 100px
+        width: 100px
+        border-radius: 50%
+        object-fit: cover
+.advertise-page
+    &.article-page
+        padding: 40px 0
+@media screen and (max-width: 1400px)
+    .advertise-page
+        &.article-page
+            padding: 40px 0
+    .mail-all-card
+        .mail-card
+            .number-text
+                font-size: 50px
+                line-height: 48px
+    .mail-footer-part
+        gap: 30px
+        img
+            height: 25px
+            margin: 15px 0
+    .top-image-logo
+        img
+            height: 80px
+            width: 80px
+
+@media screen and (max-width: 767px)
+    .mail-all-card
+        .mail-card
+            display: flex
+            align-items: center
+            padding: 20px 20px 20px 20px
+            background: #FAFAFA
+            border: 1px solid rgba(13, 13, 19, 0.1)
+            margin-bottom: 20px
+    .mail-all-card .mail-card .number-text
+        margin-right: 15px
+
+    .mail-social-part
+        background: #516AF5
+        padding: 10px
+    .top-image-logo
+        img
+            height: 60px
+            width: 60px

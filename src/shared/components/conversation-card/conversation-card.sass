@@ -1,0 +1,86 @@
+.ZachXBT
+    padding: 45px
+    background: #F9F9F9
+    width: 60%
+    margin: auto
+    .prof-img
+        height: 64px
+        width: 64px
+    .account
+        .heading-5
+            margin-right: 10px
+        .follow
+            color: #516AF5
+            cursor: pointer
+    .profile-bio
+        margin-left: 80px
+        position: relative
+        &:after
+            content: ""
+            position: absolute
+            top: 50%
+            left: -50px
+            width: 2px
+            height: 105%
+            background: #0000001A
+            transform: translateY(-50%)
+        .heading-3
+            color: #000000CC
+        .heading-4
+            color: #000000CC
+    .footer-icon
+        .footer-btn
+            &:last-child
+                i
+                    color: #000
+            &:first-child
+                i
+                    color: #F10000
+            i
+                color: #516AF5
+                font-size: 25px
+                margin-right: 10px
+                &:last-child
+                    color: #000
+
+@media screen and (max-width: 1400px)
+    .ZachXBT
+        padding: 35px
+        .prof-img
+            height: 55px
+            width: 55px
+        .profile-bio
+            margin-left: 50px
+            &::after
+                left: -25px
+
+@media screen and (max-width: 1200px)
+    .ZachXBT
+        width: 70%
+        padding: 30px
+
+@media screen and (max-width: 992px)
+    .ZachXBT
+        width: 80%
+        padding: 20px
+
+@media screen and (max-width: 767px)
+    .ZachXBT
+        width: 100%
+        padding: 15px
+        .heading-3,.heading-4
+            font-size: 14.0058px !important
+            line-height: 115% !important
+        .heading-5
+            font-weight: 700 !important
+            font-size: 10.5043px !important
+            line-height: 115% !important
+        .prof-img
+            height: 35px
+            width: 35px
+        .profile-bio
+            margin-left: 43px
+        .footer-icon
+            .footer-btn
+                i
+                    font-size: 16px

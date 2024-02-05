@@ -1,0 +1,107 @@
+.latest-card
+    padding: 20.3px 16px
+    border-bottom: 1px solid rgba(13, 13, 19, 0.1)
+    transition: all 0.3s ease-in-out
+    &:hover
+        background: #ffc1ae91
+        border-bottom: 1px solid transparent
+    &:first-child
+        background-color: #F4F4F4
+    .heading-6
+        margin: 10px 0 13px 0 !important
+        display: -webkit-box
+        -webkit-line-clamp: 1
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+    .center-dot
+        width: 1px
+        height: 15px
+        background: rgba(13, 13, 19, 0.15)
+        margin: 0 24px
+        display: flex
+        align-items: center
+        justify-content: center
+
+@media screen and (max-width: 1400px)
+    .latest-card
+        padding: 14px
+@media screen and (max-width: 1200px)
+    .latest-card
+        padding: 16px 10px
+        .heading-6
+            margin: 5px 0 10px 0 !important
+        .center-dot
+            margin: 0 10px
+
+@media screen and (max-width: 992px)
+    .latest-card
+        padding: 15px
+
+@media screen and (max-width: 767px)
+    .latest-section
+        margin: 0 10px
+    .latest-card
+        .heading-4
+            margin: 10px 0 10px 0 !important
+            -webkit-line-clamp: 1
+        .center-dot
+            margin: 0 10px
+    .latest-slider
+        height: 400px
+        // padding-bottom: 50px !important
+        .swiper-slide
+            border-radius: 20px
+            z-index: -1
+            .latest-card
+                width: 78%
+                margin: auto
+                padding: 20px
+                border-radius: 20px
+            &.latest-card3
+                z-index: -2
+                .latest-card
+                    width: 80%
+            &.latest-card4
+                z-index: -3
+                .latest-card
+                    width: 73%
+            &.latest-card5
+                z-index: -4
+                opacity: 0
+                visibility: hidden
+                .latest-card
+                    width: 73%
+        // .swiper-slide.swiper-slide-active
+        //     translate: 0px
+        //     z-index: 1
+        //     .latest-card
+        //         width: 100%
+        //         background: #8FBAED
+        // .swiper-slide.swiper-slide-next
+        //     translate: 0px
+        //     z-index: -1
+        //     transition: all 0.3s ease
+        //     .latest-card
+        //         background: #A5C8F1
+        //         width: 90%
+        //         margin: auto
+        // .swiper-slide.swiper-slide-duplicate-prev
+        //     z-index: -3
+        //     .latest-card
+        //         background: #D2E3F8
+        //         width: 70%
+        //         margin: auto
+        //         latest-card
+        // .swiper-slide
+        //     translate: 0px
+        //     z-index: -2
+        //     transition: all 0.3s ease
+        //     .medium
+        //         font-size: 12px !important
+        // .swiper-slide.swiper-slide-duplicate-active
+        //     opacity: 0
+        //     visibility: hidden
+        // .swiper-slide.swiper-slide-duplicate.swiper-slide-duplicate-active
+        //     opacity: 0
+        //     visibility: hidden

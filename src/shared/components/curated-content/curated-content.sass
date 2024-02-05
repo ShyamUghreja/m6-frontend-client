@@ -1,0 +1,122 @@
+.curated-section
+    margin: 50px 0
+    background-color: #0D0D13
+    .curated-buttons
+        flex-wrap: nowrap !important
+        a
+            font-weight: 600
+            font-size: 24px
+            line-height: 112%
+            margin-left: 15px
+            border-radius: 48px
+            background-color: transparent
+            border: 1px solid rgba(255, 255, 255, 0.2)
+            padding: 6px 20px 8px 20px
+            color: white
+            &.active
+                background-color: #FF6737
+                border: 1px solid #FF6737
+    .curated-all-card
+        display: flex
+        align-items: center
+        justify-content: center
+        justify-content: space-between
+        .curated-card
+            cursor: pointer
+            margin: 0 12px
+            background: #23232D
+            border-radius: 12px
+            transition: all 0.3s ease-in-out
+            max-width: 330px
+            &:hover
+                box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px
+            .card-image
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+                    border-radius: 12px 12px 0px 0px
+            .card-content
+                padding: 25px 16px
+
+@media screen and (max-width: 1600px)
+    .curated-section
+        .curated-all-card
+            .curated-card
+                .card-image
+                    img
+                        height: 160px
+                .card-content
+                    padding: 20px 16px
+        .curated-buttons
+            a
+                font-size: 20px
+                margin-left: 10px
+@media screen and (max-width: 1400px)
+    .curated-section
+        .curated-all-card
+            .curated-card
+                .card-image
+                    img
+                        height: 140px
+                .card-content
+                    padding: 15px
+        .curated-buttons
+            button
+                font-size: 22px
+
+@media screen and (max-width: 1200px)
+    .curated-section
+        .curated-all-card
+            .curated-card
+                .card-image
+                    img
+                        height: 120px
+
+@media screen and (max-width: 1200px)
+    .curated-section
+        .curated-all-card
+            display: grid
+            grid-template-columns: auto auto auto auto
+            gap: 15px
+            .curated-card
+                margin: 0
+                .card-image
+                    img
+                        height: 120px
+        .curated-buttons
+            button
+                margin: 0 10px 0 0
+                font-size: 20px
+            a
+                font-size: 18px
+
+@media screen and (max-width: 992px)
+    .curated-section
+        margin-top: 30px
+        .curated-all-card
+            display: grid
+            grid-template-columns: auto auto auto
+            gap: 12px
+            .curated-card
+                margin: 0
+                margin-bottom: 0
+                .card-image
+                    img
+                        height: 120px
+        .curated-buttons
+            margin-top: 20px
+            overflow: scroll
+            display: flex
+            padding-bottom: 10px
+            margin-bottom: 20px
+            button
+                margin: 0 10px 0 0
+            a
+                font-size: 16px
+@media screen and (max-width: 767px)
+    .curated-section
+        .curated-all-card
+            display: grid
+            grid-template-columns: auto auto
+            gap: 12px
